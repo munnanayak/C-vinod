@@ -1,0 +1,91 @@
+AREA OF TRIANGLE
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float b,h,a;
+    cout<<"Enter base & hight";
+    cin>>b>>h;
+    a=(b*h)/2;
+    cout<<"area is "<<a;
+
+    return 0;
+}
+
+
+PERIMETER OF RECTANGLE
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float p,l,b;
+    cout<<"Enter base & length";
+    cin>>l>>b;
+    p=2*(l+b);
+    cout<<"perimeter is "<<p;
+
+    return 0;
+}
+
+
+SUMM OF N TERMS
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float s,n;
+    cout<<"Enter n th term ";
+    cin>>n;
+    s=(n*(n+2))/2;
+    cout<<" sum of n th term is "<<s;
+
+    return 0;
+}
+
+N th TERM OF A.P SERIES
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float t,a,n,d;
+    cout<<"Enter n th term ";
+    cin>>a>>n>>d;
+    t=a+(n-1)*d;
+    cout<<"n th term is "<<t;
+
+    return 0;
+}
+
+ROOT OF QUADRATICS 
+#include<iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float r,a,b,c;
+    cout<<"Enter r,a,b,c  terms ";
+    cin>>a>>b>>c;
+    r=(-b)+(sqrt(4*a*b-b*b));
+;
+    cout<<"root is "<<r;
+
+    return 0;
+}
+
+
+
+
