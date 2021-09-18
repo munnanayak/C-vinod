@@ -86,6 +86,91 @@ int main()
     return 0;
 }
 
+SIMPLE INTREST 
+
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+    float si,p,t,r;
+    cout<<"Enter terms";
+    cin>>p>>t>>r;
+    si=(p*t*r)/100;
+    cout<<"simple intrest is "<<si;
+    return 0;
+}
+
+VALUME OF CYLINDER
+
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+    float V,pi,r,h;
+    cout<<"Enter terms";
+    cin>>pi>>r>>h;
+    V=pi*r*r*h;
+    cout<<"Valume is "<<V;
+    return 0;
+}
+
+DISTANCE B/W TWO POINTS
+
+#include <iostream>
+#include<math.h>
+
+ using namespace std;
+
+int main()
+{
+    float d,x_1,x_2,y_1,y_2;
+    cout<<"Enter terms";
+    cin>>x_1>>x_2>>y_1>>y_2;
+    d=sqrt((x_2-x_1)*(x_2-x_1)+(y_2-y_1)*(y_2-y_1));
+    cout<<"distance is "<<d;
+    return 0;
+}
+
+ENUM OF DAYS
+
+#include <iostream>
+
+ using namespace std;
+enum day {mon,tue,wed,thur,fri,sat,sun};
+int main()
+{
+    day d;
+    d=tue;
+     cout<<d<<endl;
+     
+    return 0;
+}
+
+#include <iostream>
+
+ using namespace std;
+enum day {mon=2,tue,wed,thur,fri,sat,sun};
+int main()
+{
+    day d;
+    d=tue;
+     cout<<mon<<endl;
+     cout<<tue<<endl;
+     cout<<wed<<endl;
+     cout<<thur<<endl;
+     cout<<fri<<endl;
+     cout<<sat<<endl;
+     cout<<sun<<endl;
+     
+     
+    return 0;
+}
 
 
 
