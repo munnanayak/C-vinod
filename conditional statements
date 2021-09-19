@@ -210,3 +210,163 @@ int main()
 
     return 0;
 }
+
+
+GRADES 
+
+#include <math.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int m1,m2,m3,T,A;
+    
+    cout<<"Enter marks";
+    cin>>m1>>m2>>m3;
+    T=m1+m2+m3;
+    A=T/3;
+    
+    if(A<=100 && A>=60 )
+{
+    cout<<"excellent"<<endl;
+}
+else
+
+    if(A<60 && A>=35)
+    {
+        cout<<"pass"<<endl;
+    }
+    else
+    if(A>=0 && A<35)
+    {
+      cout<<"fail"<<endl;  
+    }
+
+    return 0;
+}
+
+DISCOUNT 
+
+#include <math.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float amount,Amountdiscount;
+    
+    cout<<"Enter amount";
+    cin>>amount;
+     
+    
+    
+    if(amount>=5000 )
+{
+    Amountdiscount==amount-amount*20/100;
+    cout<<"20% discount"<<endl;
+}
+else
+
+    if(amount<5000 && amount>=2000)
+    {
+        Amountdiscount==amount-amount*10/100;
+        cout<<"10% discount"<<endl;
+    }
+    else
+    if(amount<2000)
+    {
+        Amountdiscount==amount-amount*5/100;
+      cout<<"5% discount"<<endl;  
+    }
+
+    return 0;
+}
+
+DAYS
+
+#include <math.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int day;
+    
+    cout<<"Enter day number";
+    cin>>day;
+     
+    
+    
+ if(day==1)
+{
+    
+    cout<<"Mon"<<endl;
+}
+else if(day==2)
+    {
+        
+        cout<<"Tue"<<endl;
+    }
+else if(day==3)
+    {
+        
+      cout<<"Wed"<<endl;  
+      
+    }
+else if(day==4)
+    {
+         cout<<"Thur"<<endl;
+    }
+else if(day==5)
+    {
+         cout<<"Fri"<<endl;
+    }
+else if(day==6)
+    {
+         cout<<"Sat"<<endl;
+    }
+else if(day==7)
+    {
+         cout<<"sun"<<endl;
+    }
+    return 0;
+}
+
+SWITCH CASE
+
+#include <math.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"menu\n";
+    cout<<"1. Add\n"<<"2. Sub\n"<<"3. Mul\n"<<"4. Div\n";
+    int option;
+    cout<<"Enter your option";
+    
+    cin>>option;
+    
+    float a,b,c;
+    cout<<"Enter two nos";
+    cin>>a>>b;
+    switch(option)
+    {
+    case 1: c=a+b;
+    break;
+    case 2: c=a-b;
+    break;
+    case 3: c=a*b;
+    break;
+    case 4: c=a/b;
+    break;
+    }
+  cout<<" Result is"<<c<<endl;
+    return 0;
+}
+
