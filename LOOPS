@@ -172,3 +172,141 @@ int main()
    
     return 0;
 }
+
+AMSTRONG NUMBER
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r,n,sum=0,m;
+    cout<<"Enter no";
+    cin>>n;
+    
+    m=n;
+     
+    while(n>0)
+    {
+     r=n%10;
+     n=n/10;
+     sum=sum+r*r*r;
+    }
+    
+    if(sum==m)
+    {
+        cout<<"Amstrog number"<<endl;
+    
+    }
+     else
+      { 
+        cout<<"not amstrong number"<<endl;
+      
+    }
+    
+    
+    
+   
+    return 0;
+}
+
+REVERCE NUMBER
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r,n,rev=0,m;
+    cout<<"Enter no";
+    cin>>n;
+    
+    m=n;
+     
+    while(n>0)
+    {
+     r=n%10;
+     n=n/10;
+     rev=rev*10+r;;
+    
+    
+        cout<<"reversce number is"<<rev;
+    
+    
+    
+    }
+   
+    return 0;
+}
+
+
+POLINDROM NUMBER
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int r,n,rev=0,m;
+    cout<<"Enter no";
+    cin>>n;
+    
+    m=n;
+     
+    while(n>0)
+    {
+        
+     r=n%10;
+     n=n/10;
+     rev=rev*10+r;;
+    
+    
+    }
+     if (rev==m)
+     
+         cout<<"polindram";
+         
+     
+     else
+     
+         cout<<"not polindram";
+     
+     
+
+    
+    
+    
+    return 0;
+     }
+
+GCD
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,m;
+    cout<<"Enter no";
+    cin>>m>>n;
+    
+    
+     
+    while(m!=n)
+    {
+     if(m>n)   
+     m=m-n;
+     else
+     if(n>m)
+     n=n-m;
+     
+    }
+     cout<<" GCD is"<<m;
+    
+  return 0;
+}
+
