@@ -229,7 +229,7 @@ int main()
     {
      r=n%10;
      n=n/10;
-     rev=rev*10+r;;
+     rev=rev*10+r;
     
     
         cout<<"reversce number is"<<rev;
@@ -261,7 +261,7 @@ int main()
         
      r=n%10;
      n=n/10;
-     rev=rev*10+r;;
+     rev=rev*10+r;
     
     
     }
@@ -273,12 +273,7 @@ int main()
      else
      
          cout<<"not polindram";
-     
-     
-
-    
-    
-    
+  
     return 0;
      }
 
