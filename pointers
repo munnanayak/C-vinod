@@ -1,0 +1,80 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a=10;
+   int *p=&a;
+   
+   cout<< a <<endl;
+   cout<< &a << endl;
+   cout<< p <<endl;
+   cout<< &p <<endl;
+   cout<< *p <<endl;
+
+    return 0;
+}
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{  
+    int i;
+   int A[5]{2,4,6,8,10};
+   int *p=A;
+   
+   for(i=0;i<5;i++)
+   {
+   cout<<A[i]<<endl;
+   
+ 
+   
+   }
+
+
+    return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{  
+    
+   int A[5]{2,4,6,8,10};
+   int *p=A; int *q=&A[4];
+   
+  cout<<q-p;
+
+
+    return 0;
+}
+
+REFERENCE
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{  
+    
+  int x=10;
+  
+  int &y=x;
+  
+  cout<<x<<endl;
+  
+  y++;
+  x++;
+  cout<<x<<endl;
+  
+
+
+    return 0;
+}
