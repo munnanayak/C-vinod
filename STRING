@@ -15,3 +15,132 @@ int main()
     return 0;
 }
 
+USING STRCAT
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    char s1[20]="good";
+    char s2[20]=" morning";
+     
+     strcat(s1,s2);
+    
+    cout<<s1<<endl;
+
+    return 0;
+}
+
+USING STRNCPY
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    char s1[20]="Good";
+    char s2[20]=" ";
+     
+     strncpy(s2,s1,4);
+
+    cout<<s2<<endl;
+    
+
+    return 0;
+}
+
+USING strstr
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    char s1[20]="programming";
+    char s2[20]="gram";
+     
+     
+
+    cout<<strstr(s1,s2)<<endl;
+    
+
+    return 0;
+}
+using strchr(charector)
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    char s1[20]="programming";
+    
+    cout<<strchr(s1,'g')<<endl;
+
+    return 0;
+}
+using strcmp (comparision)
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    char s1[20]="Hello";
+    char s2[20]="Hello";
+    
+    cout<<strcmp(s1,s2)<<endl;
+
+    return 0;
+}
+using strtol and strtof (long integer and float integer)
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    char s1[10]="345";
+    char s2[10]="45.8";
+    
+    long int x=strtol(s1,NULL,10);
+    float    y=strtof(s2,NULL);
+    
+    cout<<x*10<<endl<<y-8<<endl;
+
+    return 0;
+}
+
+using strtok 
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    
+    char s1[20]="x=10;y=20;z=50";
+    
+    char *token=strtok(s1, "=;");
+    while(token!=NULL)
+    {
+        cout<< token<<endl;
+        token=strtok(NULL, "=;");
+    }
+    
+
+    return 0;
+}
+
