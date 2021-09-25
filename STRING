@@ -144,3 +144,38 @@ int main()
     return 0;
 }
 
+using append 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string str="Hello";
+    
+    cout<<str.capacity()<<endl;
+    str.append(" Nayak how do u do");
+    cout<<str.capacity()<<endl;
+    cout<<str<<endl;
+
+    return 0;
+}
+
+using str.insert
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string str1="kjidvvebvjv";
+    string str2="jihksdfihufjnjniwwncuhjjdikijwfnnh";
+    str1.insert(5,"jj");
+    cout<<str1<<" "<<str1.capacity()<<" "<<str1.length()<<endl;
+    str2.insert(7,"nayak");
+    cout<<str2<<" "<<str2.capacity()<<" "<<str2.length()<<endl;
+
+    return 0;
+}
