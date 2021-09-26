@@ -1,0 +1,217 @@
+adding two numbers
+
+#include <iostream>
+
+using namespace std;
+
+int add(int x,int y)
+{
+   int z;
+   z=x+y;
+    return z;
+}
+ 
+int main()
+   {
+     int x=10, y=15, z;
+     z=add(x,y);
+     cout<<"sum is :"<<z<<endl;
+     return 0;
+    }
+    
+    Maximun number
+    
+    #include <iostream>
+
+using namespace std;
+
+int maxim(int a,int b,int c)
+{
+   if(a>b && a>c)
+   return a;
+   else
+   if(b>c)
+   return b;
+   else
+   return c;
+   
+}
+ 
+int main()
+   {
+     int x=10, y=15, z=80,r;
+     r=maxim(x,y,z);
+     cout<<"Maximum no is :"<<r<<endl;
+     return 0;
+    }
+    
+    minimum number is
+    
+    #include <iostream>
+
+using namespace std;
+
+int mini(int a,int b,int c)
+{
+   if(a<b && a<c)
+   return a;
+   else
+   if(b<c)
+   return b;
+   else
+   return c;
+   
+}
+ 
+int main()
+   {
+     int x=10, y=15, z=80,r;
+     r=mini(x,y,z);
+     cout<<"Minimum no is :"<<r<<endl;
+     return 0;
+    }
+    
+    power of numbers
+    #include <iostream>
+    using name space std;
+    int pow(int m,int n )
+{
+   int p=1;
+   for(int i=0;i<n;i++)
+   {
+       p=p*m;
+   }
+   return p;
+   
+}
+ 
+int main()
+   {
+     
+     
+     cout<<pow(7,3)<<endl;
+     return 0;
+    }
+    
+    sum of overflow of numbers
+    
+    // A C/C++ Program to generate OTP (One Time Password)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+// A Function to generate a unique OTP everytime
+int add1(int x,int y,int z)
+ {
+     return x+y+z;
+ }
+int add(int x,int y)
+{
+  return x+y; 
+}
+ 
+ float add2(float i,float j)
+ {
+    return i+j; 
+ }
+ 
+int main()
+   {
+     int a=10,b=16,c,d;
+     c=add(a,b);
+     d=add1(a,b,c);
+     float i=5.5,j=8.9,k;
+     k=add2(i,j);
+     cout<<c<<endl;
+     cout<<d<<endl;
+     cout<<k<<endl;
+     return 0;
+     
+    }
+over flowing minimum numbers
+
+#include <iostream>
+
+using namespace std;
+
+int mini(int a,int b,int c )
+{
+  if(a<b && a<c)
+  {
+      return a;
+  }
+      else
+      
+      if(b<c)
+      {
+      return b;
+      }
+      
+      else
+      {
+      return c;
+      
+      
+      }
+  }
+  int mini(int x,int y)
+  {
+  if(x<y )
+  {
+      return x;
+  }
+      else
+      return y;
+  
+  }
+  float mini(float i,float j)
+  {
+      if(i<j )
+  {
+      return i;
+  }
+      else
+      return j;
+  
+  }
+  
+  
+  int main()
+  {
+      int a=4,b=8,c=6,d;
+      d=mini(a,b,c);
+      int x=9,y=7,z;
+      z=mini(x,y);
+      
+      float i=3.5, j=9.8,k;
+      k=mini(i,j);
+      
+      cout<<"minimun is ;"<<d<<endl;
+      cout<<"minimun is :"<<z<<endl;
+      cout<<"minimun is :"<<k<<endl;
+  
+      return 0;
+  }
+  template Maximum
+  
+  #include <iostream>
+
+using namespace std;
+template <class T>
+
+    T Max(T x,T y )
+{
+  if(x>y)
+  
+      return x;
+  
+      else
+      return y;
+  }
+
+    int main()
+  {
+    cout<<Max(10,5)<<endl;
+    cout<<Max(12.5f,17.3f);
+    return 0;
+  }
