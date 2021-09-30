@@ -1,0 +1,303 @@
+#include <iostream>
+
+using namespace std;
+
+ class Base
+{
+  public:
+         void display()
+    {
+        cout<<" Display of Base"<<endl;
+    }
+};
+   class Derived: public Base
+   {
+      public:
+             void display(int x)
+    {
+        cout<<"Display of Derived"<<endl;
+    }
+   };
+   
+  int main()
+  
+  {
+      Derived d;
+      d.display(10);
+      
+  }
+  
+  Virtual Funtion
+  
+  #include <iostream>
+
+using namespace std;
+
+ class Base
+{
+  public:
+        virtual void fun()
+    {
+        cout<<" Fun of Base"<<endl;
+    }
+};
+   class Derived: public Base
+   {
+      public:
+             void fun()
+    {
+        cout<<"Fun of Derived"<<endl;
+    }
+   };
+   
+  int main()
+  
+  {
+      Derived d;
+      Base *ptr=&d;
+      ptr->fun();
+      
+  }
+  
+  Advance Car started (funtion overriding)
+  
+  #include <iostream>
+
+using namespace std;
+
+ class BasicCar
+{
+  public:
+       virtual void start()
+    {
+        cout<<" Basic Car Started"<<endl;
+    }
+};
+   class AdvanceCar: public BasicCar
+   {
+      public:
+      
+       void start()
+             
+    {
+        cout<<"Advance Car Started"<<endl;
+    }
+   };
+   
+  int main()
+  
+  {
+     
+    BasicCar *p=new AdvanceCar();
+    p->start();
+      
+  }
+POLIMORPHISUM
+
+#include <iostream>
+
+using namespace std;
+
+ class Car
+{
+  public:
+       virtual void start()
+    {
+        cout<<" Car Started"<<endl;
+    }
+    
+    virtual void stop()
+    {
+        cout<<" Car Stoped"<<endl;
+    }
+};
+       class Innova: public Car
+   {
+      public:
+      
+       void start()
+             
+    {
+        cout<<"Innova Car Started"<<endl;
+    }
+    
+      void stop()
+             
+    {
+        cout<<"Innova Car Stoped"<<endl;
+    }
+   };
+       
+     class Swift: public Car
+   {
+      public:
+      
+       void start()
+             
+    {
+        cout<<"Swift Car Started"<<endl;
+    }
+    
+      void stop()
+             
+    {
+        cout<<"Swift Car Stoped"<<endl;
+    }
+   };
+   
+  int main()
+  
+  {
+     
+    
+    Car *c=new Innova();
+    c->start();
+    c=new Swift();
+    c->start();
+      
+  }
+
+POLIMORPHISUM(pure virtual funtion)
+
+#include <iostream>
+
+using namespace std;
+
+ class Car
+{
+  public:
+       virtual void start()=0;
+    
+    
+    virtual void stop()=0;
+    
+};
+       class Innova: public Car
+   {
+      public:
+      
+       void start()
+             
+    {
+        cout<<"Innova Car Started"<<endl;
+    }
+    
+      void stop()
+             
+    {
+        cout<<"Innova Car Stoped"<<endl;
+    }
+   };
+       
+     class Swift: public Car
+   {
+      public:
+      
+       void start()
+      {
+          cout<<"Swift Car started"<<endl; 
+       }
+             
+   
+    
+      void stop()
+      {
+         cout<<"Swift Car stoped"<<endl;   
+      }
+             
+    
+   };
+   
+  int main()
+  
+  {
+     
+    
+    Car *c=new Innova();
+    c->start();
+    c=new Swift();
+    c->start();
+      
+  }
+ABSTRACT CLASS
+
+#include <iostream>
+
+using namespace std;
+
+ class Base
+{
+  public:
+        void fun1()
+        {
+            cout<<"Base fun1"<<endl;
+        }
+    
+    
+    virtual void fun2()=0;
+    
+};
+       class Derived:public Base
+   {
+      public:
+      
+       void fun2()
+             
+    {
+        cout<<"Derived fun2"<<endl;
+    }
+    
+      
+   };
+      
+  int main()
+  
+  {
+     Derived d;
+     d.fun1();
+     d.fun2();
+      
+  }
+  
+  quation of rectangle and circle
+  
+  #include<iostream>
+using namespace std;
+class Shape
+{
+public:
+ virtual float area()=0;
+ virtual float perimeter()=0;
+};
+class Rectangle:public Shape
+{
+private:
+ float length;
+ float breadth;
+public:
+ Rectangle(int l=1,int b=1){length=1;breadth=b;}
+
+ float area(){ return length*breadth;}
+ float perimeter(){return 2*(length+breadth);}
+
+};
+class Circle:public Shape
+{
+private:
+ float radius;
+public:
+ Circle(float r){radius=r;}
+ float area(){return 3.1425*radius*radius;}
+ float perimeter(){return 2*3.1425*radius;}
+};
+int main()
+{
+ Shape *s=new Rectangle(10,5);
+ cout<<"Area of Rectangle "<<s->area()<<endl;
+ cout<<"Perimeter of Rectangle "<<s->perimeter()<<endl;
+
+ s=new Circle(10);
+ cout<<"Area of Circle "<<s->area()<<endl;
+ cout<<"Perimeter of Circle "<<s->perimeter()<<endl;
+
+}
