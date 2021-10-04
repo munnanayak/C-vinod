@@ -1,0 +1,81 @@
+distructor
+
+#include <iostream>
+
+using namespace std;
+class Demo
+{
+ public:
+         int *p;
+        Demo()
+    {
+          p=new int[10];
+        cout<<"Constructor of Demo"<<endl;
+    }
+    
+      ~Demo()
+    {
+        delete []p;
+        cout<<"Distructor of Demo "<<endl;
+    }
+    
+   
+};
+   void fun()
+  {
+    Demo *ptr=new Demo();
+    delete ptr;
+  }
+int main()
+{
+    
+    fun();
+    
+}
+
+
+Virtual Distructor
+
+using namespace std;
+class Base
+{
+ public:
+         
+      Base()
+    {
+          
+        cout<<" Basic Constructor"<<endl;
+    }
+    
+     virtual ~Base()
+    {
+        
+        cout<<"Basic Distructor  "<<endl;
+    }
+    
+   
+}; 
+       class Derived:public Base
+  { 
+       public:
+      
+       Derived()
+    {
+       cout<<"Derived constructor"<<endl;
+    }
+        ~Derived()
+    {
+        cout<<"Derived Distructor"<<endl;
+    }
+    
+  };
+  void fun()
+  {
+      Derived d;
+  }
+  
+    int main()
+{
+    
+    fun();
+}
