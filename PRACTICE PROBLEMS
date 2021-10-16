@@ -1,0 +1,57 @@
+Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US. Calculate Pooja's account balance after an attempted transaction.
+
+#include <iostream>
+
+using namespace std;
+
+int main()                             
+{
+    int aw;
+    float t;
+    cin>>aw;
+    cin>>t;
+    if(aw%5==0 && (t>=aw+0.5))
+    {
+        
+       t=t-float(aw+0.5); 
+       
+           cout<<t;
+    }
+    else
+    {
+       cout<<t;
+    }
+    
+
+    return 0;
+}
+
+The purpose of this problem is to verify whether the method you are using to read input data is sufficiently fast to handle problems branded with the enormous Input/Output warning. You are expected to be able to process at least 2.5MB of input data per second at runtime.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a ,count=0;
+    int b;
+    cin>>a>>b;
+    long long int c[a];
+    
+       for(int i=0;i<a;i++)
+    {
+        
+       cin>>c[i];
+       
+          
+    }
+      for(int i=0;i<a;i++)
+    {
+       if(c[i]%b==0)
+       count++;
+    }
+       cout<<count<<endl;
+
+    return 0;
+}
